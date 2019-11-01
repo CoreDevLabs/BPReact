@@ -1,0 +1,19 @@
+.Container {
+  width: 100%;
+}
+
+.bp3-navbar {
+  background: #FBFBFB;
+  color: #595959;
+  border: none;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.text {
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.bp3-button {
+  outline: none;
+}
