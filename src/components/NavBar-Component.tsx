@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import '../styles/navbar-Styles.css';
+import '../styles/navbar-Styles.scss';
 
 const NavBarComponent = () => (
   
@@ -8,7 +8,7 @@ const NavBarComponent = () => (
     <div className="bp3-navbar">
       <div className="Container">
         <div className="bp3-navbar-group bp3-align-left">
-          <div className="bp3-navbar-heading text">WeatherDART</div>
+          <div className="bp3-navbar-heading text">InternX</div>
         </div>
 
         <div className="bp3-navbar-group bp3-align-right">

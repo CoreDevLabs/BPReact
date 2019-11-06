@@ -4,13 +4,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   devtool: "source-map",
-  entry: './src/index.tsx',
+  entry: './public/',
   output: {
     path: path.join(__dirname, './dist'),
     filename: 'index_bundle.js'
   },
   resolve: {
-    extensions: [".ts", ".tsx", ".js"]
+    extensions: [".js", ".ts", ".tsx"]
   },
   module: {
     rules: [
@@ -30,8 +30,8 @@ module.exports = {
         use: ["source-map-loader"]
       },
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        test: /\.s[ac]ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -53,7 +53,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './public/index.html'
     })
   ]
 }
